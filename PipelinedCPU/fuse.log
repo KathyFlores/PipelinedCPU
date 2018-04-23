@@ -1,0 +1,45 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/ISE/branch/Arch_02/cpu_tst_isim_beh.exe" -prj "D:/ISE/branch/Arch_02/cpu_tst_beh.prj" "cpu_tst" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/ISE/branch/Arch_02/regs.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/REG32.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/MUX4T1_5.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/MUX4T1_32.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/MUX2T1_32.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/MemWbRegister.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/IfIdRegister.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/IdExRegister.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/Ext_32.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/ExMemRegister.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/ControlUnit.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/ALU_v.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/add_32.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/PipelinedCPU.v" into library work
+Analyzing Verilog file "D:/ISE/branch/Arch_02/cpu_tst.v" into library work
+Analyzing Verilog file "D:/ISE/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module REG32
+Compiling module add_32
+Compiling module MUX4T1_32
+Compiling module IfIdRegister
+Compiling module Regs
+Compiling module Ext_32
+Compiling module ControlUnit
+Compiling module IdExRegister
+Compiling module MUX2T1_32
+Compiling module MUX4T1_5
+Compiling module alu
+Compiling module ExMemRegister
+Compiling module MemWbRegister
+Compiling module PipelinedCPU
+Compiling module cpu_tst
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable D:/ISE/branch/Arch_02/cpu_tst_isim_beh.exe
+Fuse Memory Usage: 29408 KB
+Fuse CPU Usage: 1484 ms

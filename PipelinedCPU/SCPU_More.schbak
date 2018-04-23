@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="kintex7" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="XLXN_1(2:0)" />
+        <signal name="XLXN_2" />
+        <signal name="XLXN_3(1:0)" />
+        <signal name="XLXN_4" />
+        <signal name="XLXN_5" />
+        <signal name="XLXN_6" />
+        <signal name="XLXN_7(1:0)" />
+        <signal name="memw" />
+        <signal name="XLXN_9" />
+        <signal name="Data_out(31:0)" />
+        <signal name="Addr_out(31:0)" />
+        <signal name="PC_out(31:0)" />
+        <signal name="MIO_ready" />
+        <signal name="INT" />
+        <signal name="clk" />
+        <signal name="reset" />
+        <signal name="Data_in(31:0)" />
+        <signal name="inst_in(31:0)" />
+        <signal name="inst_in(25:0)" />
+        <signal name="inst_in(31:26)" />
+        <signal name="inst_in(5:0)" />
+        <signal name="CPU_MIO" />
+        <port polarity="Output" name="memw" />
+        <port polarity="Output" name="Data_out(31:0)" />
+        <port polarity="Output" name="Addr_out(31:0)" />
+        <port polarity="Output" name="PC_out(31:0)" />
+        <port polarity="Input" name="MIO_ready" />
+        <port polarity="Input" name="INT" />
+        <port polarity="Input" name="clk" />
+        <port polarity="Input" name="reset" />
+        <port polarity="Input" name="Data_in(31:0)" />
+        <port polarity="Input" name="inst_in(31:0)" />
+        <port polarity="Output" name="CPU_MIO" />
+    </netlist>
+    <sheet sheetnum="1" width="3520" height="2720">
+        <branch name="XLXN_1(2:0)">
+            <wire x2="1696" y1="1632" y2="1632" x1="1312" />
+        </branch>
+        <branch name="XLXN_2">
+            <wire x2="1696" y1="1568" y2="1568" x1="1312" />
+        </branch>
+        <branch name="XLXN_3(1:0)">
+            <wire x2="1696" y1="1504" y2="1504" x1="1312" />
+        </branch>
+        <branch name="XLXN_4">
+            <wire x2="1696" y1="1440" y2="1440" x1="1312" />
+        </branch>
+        <branch name="XLXN_5">
+            <wire x2="1696" y1="1248" y2="1248" x1="1312" />
+        </branch>
+        <branch name="XLXN_6">
+            <wire x2="1696" y1="1312" y2="1312" x1="1312" />
+        </branch>
+        <branch name="XLXN_7(1:0)">
+            <wire x2="1696" y1="1376" y2="1376" x1="1312" />
+        </branch>
+        <branch name="memw">
+            <wire x2="2320" y1="1696" y2="1696" x1="1312" />
+        </branch>
+        <branch name="XLXN_9">
+            <wire x2="848" y1="1744" y2="1744" x1="768" />
+            <wire x2="768" y1="1744" y2="1872" x1="768" />
+            <wire x2="2256" y1="1872" y2="1872" x1="768" />
+            <wire x2="2256" y1="1504" y2="1504" x1="2176" />
+            <wire x2="2256" y1="1504" y2="1872" x1="2256" />
+        </branch>
+        <branch name="Data_out(31:0)">
+            <wire x2="2320" y1="1392" y2="1392" x1="2176" />
+        </branch>
+        <branch name="Addr_out(31:0)">
+            <wire x2="2320" y1="1264" y2="1264" x1="2176" />
+        </branch>
+        <branch name="PC_out(31:0)">
+            <wire x2="2288" y1="1104" y2="1104" x1="2176" />
+            <wire x2="2320" y1="1104" y2="1104" x1="2288" />
+        </branch>
+        <branch name="MIO_ready">
+            <wire x2="848" y1="1696" y2="1696" x1="640" />
+        </branch>
+        <branch name="INT">
+            <wire x2="800" y1="1920" y2="1920" x1="640" />
+        </branch>
+        <branch name="clk">
+            <wire x2="1696" y1="992" y2="992" x1="640" />
+        </branch>
+        <branch name="reset">
+            <wire x2="1696" y1="1056" y2="1056" x1="640" />
+        </branch>
+        <branch name="Data_in(31:0)">
+            <wire x2="1696" y1="1104" y2="1104" x1="640" />
+        </branch>
+        <iomarker fontsize="28" x="640" y="992" name="clk" orien="R180" />
+        <iomarker fontsize="28" x="640" y="1056" name="reset" orien="R180" />
+        <iomarker fontsize="28" x="640" y="1104" name="Data_in(31:0)" orien="R180" />
+        <branch name="inst_in(31:0)">
+            <wire x2="656" y1="1168" y2="1168" x1="640" />
+            <wire x2="656" y1="1168" y2="1200" x1="656" />
+            <wire x2="656" y1="1200" y2="1360" x1="656" />
+            <wire x2="656" y1="1360" y2="1440" x1="656" />
+        </branch>
+        <iomarker fontsize="28" x="640" y="1168" name="inst_in(31:0)" orien="R180" />
+        <bustap x2="752" y1="1168" y2="1168" x1="656" />
+        <branch name="inst_in(25:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1224" y="1168" type="branch" />
+            <wire x2="1232" y1="1168" y2="1168" x1="752" />
+            <wire x2="1696" y1="1168" y2="1168" x1="1232" />
+        </branch>
+        <bustap x2="752" y1="1360" y2="1360" x1="656" />
+        <branch name="inst_in(31:26)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="800" y="1360" type="branch" />
+            <wire x2="800" y1="1360" y2="1360" x1="752" />
+            <wire x2="848" y1="1360" y2="1360" x1="800" />
+        </branch>
+        <bustap x2="752" y1="1440" y2="1440" x1="656" />
+        <branch name="inst_in(5:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="800" y="1440" type="branch" />
+            <wire x2="800" y1="1440" y2="1440" x1="752" />
+            <wire x2="848" y1="1440" y2="1440" x1="800" />
+        </branch>
+        <iomarker fontsize="28" x="640" y="1696" name="MIO_ready" orien="R180" />
+        <iomarker fontsize="28" x="640" y="1920" name="INT" orien="R180" />
+        <iomarker fontsize="28" x="2320" y="1696" name="memw" orien="R0" />
+        <iomarker fontsize="28" x="2320" y="1392" name="Data_out(31:0)" orien="R0" />
+        <iomarker fontsize="28" x="2320" y="1264" name="Addr_out(31:0)" orien="R0" />
+        <iomarker fontsize="28" x="2320" y="1104" name="PC_out(31:0)" orien="R0" />
+        <branch name="CPU_MIO">
+            <wire x2="2320" y1="1760" y2="1760" x1="1312" />
+        </branch>
+        <iomarker fontsize="28" x="2320" y="1760" name="CPU_MIO" orien="R0" />
+    </sheet>
+</drawing>

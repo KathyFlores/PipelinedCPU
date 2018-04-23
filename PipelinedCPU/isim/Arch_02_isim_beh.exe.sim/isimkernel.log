@@ -1,0 +1,28 @@
+Command line:
+   Arch_02_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59163
+
+Sun Dec 17 09:15:05 2017
+
+
+ Elaboration Time: 1.35938 sec
+
+ Current Memory Usage: 2309.7 Meg
+
+ Total Signals          : 2325
+ Total Nets             : 28566
+ Total Signal Drivers   : 8792
+ Total Blocks           : 389
+ Total Primitive Blocks : 369
+ Total Processes        : 8837
+ Total Traceable Variables  : 509
+ Total Scalar Nets and Variables : 234230
+
+ Total Simulation Time: 1.57813 sec
+
+ Current Memory Usage: 2309.7 Meg
+
+Sun Dec 17 09:15:13 2017
+

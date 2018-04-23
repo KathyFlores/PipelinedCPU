@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Sword_v4.ucf -p xc7k160t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Sword_v4.ucf -p xc7k160t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k160t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf Sword_v4.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Sword_v4.ucf -p xc7k325t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf Sword_v4.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim OExp07_ExtSCPU.ngc OExp07_ExtSCPU_synthesis.v 
+sch2hdl -sympath D:/ISE/OExp07-ExtSCPU/ipcore_dir -intstyle ise -family kintex7 -verilog OExp07_ExtSCPU.vf -w D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.sch 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Sword_v4.ucf -p xc7k325t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf Sword_v4.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Sword_v4.ucf -p xc7k325t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf Sword_v4.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/ISE/OExp07-ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Sword_v4.ucf -p xc7k325t-ffg676-2L OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf -ucf Sword_v4.ucf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 

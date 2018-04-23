@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/ISE/OExp07-ExtSCPU/clk_diff.v -lang verilog -prj OExp07-ExtSCPU -o clk_diff.spl -module clk_diff -template D:/ISE/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clk_diff.spl D:/ISE/OExp07-ExtSCPU/clk_diff.sym 
